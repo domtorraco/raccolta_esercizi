@@ -1,0 +1,17 @@
+
+#logo {
+    position:fixed;
+}
+
+body{
+    background-color: #E09651;
+}
+
+div{
+    border-left: transparent;
+    box-sizing: 20px;
+}
+
+h1{
+    text-align: right;
+}

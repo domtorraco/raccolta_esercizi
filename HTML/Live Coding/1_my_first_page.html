@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Page</title>
+</head>
+
+<body>
+
+    <h1>My first web page</h1>
+    
+    <a href="https://www.google.it"> Link a Google </a>
+    <br>
+    <!-- 
+    elemento HTML di selezione scelta 
+    id mi da un nome univoco in pagina (come fosse una sorta di CF dell'elemento)
+    name: nome associato all'elemento html
+
+    se non ho esigenze particolari si possono omettere
+    -->
+    <select name="birt_year" id="id_birth_year">
+        <option value="">Scegli il tuo anno</option>
+        <option value="1987">1987</option>
+        <option value="1988">1988</option>
+        <option value="1989">1989</option>
+    </select>
+
+    <!-- ol sta per Ordered List e ul sta per Unordered list -->
+    <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <!-- div non è obbligatorio qui ma sto "raggruppando" logicamente i miei elementi in pagina -->
+    <div>
+        <!-- value dentro mette un messaggio di default -->
+        <input value="Inserisci il tuo nome">
+        <br>
+        <input type="color">
+        <br>
+        <input type="file">
+        <br>
+        <!-- number vuol dire che posso scrivere solo numeri e , -->
+        <input type="number">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <input type="radio">
+        <br>
+        <input type="checkbox">
+        <br>
+        <input type="password">
+        <br>
+        <!-- il browser controlla se la email è valida all'invio dei dati-->
+        <input type="email">
+    </div>
+
+
+    <h2> Sono un titolo h2 </h2>
+    <h3> Sono un titolo h3 </h3>
+    <h4> Sono un titolo h4 </h4>
+    <h5> Sono un titolo h5 </h5>
+    <h6> Sono un titolo h6 </h6>
+
+    <!-- ignorato -->
+    <!-- <h7> Sono un titolo h7 </h7> -->
+
+    <hr>
+
+    <!-- gli spazi dentro il testo non vengono presi in considerazione dal browser-->
+    <p>
+    <b>Lorem ipsum</b> dolor sit amet, <i>consectetur</i> adipiscing elit. Quisque aliquet quam et gravida posuere. <u>Aenean pretium</u> gravida urna eu tincidunt. In diam lectus, commodo volutpat fringilla tincidunt, malesuada id quam. 
+        
+    Aenean egestas egestas magna, eu pharetra odio malesuada vitae. Aenean nulla lorem, malesuada eget pellentesque ac, lobortis sit amet sapien. Fusce convallis est tempor dolor accumsan, vitae tincidunt mi auctor. 
+        
+    <br>
+    <br>
+    <br>
+
+    Quisque convallis in odio sit amet molestie. Phasellus sit amet sapien a nisl feugiat varius in et lacus. Vestibulum pretium suscipit ligula ut lobortis. Praesent a nisl eu dui pretium elementum</p>
+
+        <textarea></textarea>
+
+        <br>
+
+        <!-- se per qualche motivo non si visualizza l'immagine, verrà stampato 
+        il testo alternativo-->
+        <!-- carico l'immagine sia che è nei miei files in "locale" (cioè, sul mio computer)
+        e sia linkandola via web
+        -->
+        <img src="Colosseo_2020.jpg" width="500" height="300" alt="Amphitheatrum Flavium">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Colosseo_2020.jpg" width="500" height="300" alt="Amphitheatrum Flavium">
+
+</body>
+
+</html>

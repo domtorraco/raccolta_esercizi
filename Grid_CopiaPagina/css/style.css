@@ -1,0 +1,74 @@
+header {
+  background-color: aquamarine;
+  grid-area: header;
+}
+
+header > p {
+  text-align: center;
+  border: 1px solid grey;
+}
+
+header > div {
+  border: 1px solid grey;
+}
+
+header > nav {
+  border: 1px solid grey;
+}
+
+header > div > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.jstf {
+  color: blue;
+  display: flex;
+  justify-content: space-around;
+}
+
+header ul > li,
+header ol > li {
+  display: inline;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+main {
+  background-color: orange;
+  grid-area: main;
+}
+
+.leftside {
+  background-color: blueviolet;
+  grid-area: leftside;
+}
+
+.rightside {
+  background-color: violet;
+  grid-area: rightside;
+}
+
+footer {
+  background-color: gray;
+  grid-area: footer;
+}
+
+#page {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "leftside main rightside"
+    "footer footer footer";
+
+  grid-template-columns: 25% 50% 25%;
+  grid-template-rows: 205px 205px 205px;
+}
+
+.logomdn {
+  height: 100px;
+}

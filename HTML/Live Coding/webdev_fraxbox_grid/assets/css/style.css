@@ -1,0 +1,45 @@
+header {
+    background-color: aquamarine;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  header > p {
+    border: 1px solid grey;
+  }
+  header > div {
+    border: 1px solid grey;
+  }
+  header > nav {
+    border: 1px solid grey;
+  
+  }
+  div > nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+  ul > li,ol > li {
+      display: inline;
+  }
+  
+  main {
+    background-color: orange;
+    grid-area: main;
+  }
+  
+  aside {
+    background-color: blueviolet;
+    grid-area: aside;
+  }
+  
+  #page {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "aside main";
+  
+    grid-template-columns: 200px 400px;
+    grid-template-rows: 200px 600px;
+  }

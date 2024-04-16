@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .item1{grid-area: header;}
+        .item2{grid-area: menu;}
+        .item3{
+            grid-area: main;
+        }
+        .item4{grid-area: footer;}
+        
+        .grid-container{
+
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "menu main main"
+                "footer footer footer";
+            gap: 10px;
+            background-color: rgb(54, 161, 180);
+            padding: 10px;
+        }
+
+        .products{
+            padding-bottom: 20px;
+        }
+
+        .grid-container > div {
+            background-color: rgb(179, 207, 219);
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .grid-main-container{
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        p{
+           font-size: 1.4rem; 
+           margin-bottom: 0px;
+           margin-top: 0px;
+        }
+
+        span{
+            font-size: 1.4rem; 
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">
+            <div class="grid-main-container">
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 1</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 2</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 3</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 4</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 5</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 6</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 7</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 8</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 9</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+                <div class="products">
+                    <img src="https://picsum.photos/seed/picsum/200/300" alt="">
+                    <p>Prodotto 10</p>
+                    <span>Prezzo: 20 euro</span>
+                </div>
+            </div>
+        </div>
+        <div class="item4">Footer</div>
+    </div>
+</body>
+</html>
