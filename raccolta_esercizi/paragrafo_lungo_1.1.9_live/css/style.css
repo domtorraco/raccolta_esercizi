@@ -1,0 +1,26 @@
+
+button {
+    color: blue;
+    font-weight: bold;
+}
+#giu > button {
+    color: red;
+}
+/*a {
+    color: green;
+    position: absolute ;
+    left:100px;
+    top: 50px; 
+}*/
+.terzo {
+    color: violet;
+}
+span.terzo {
+    color: red;
+}
+p>span.terzo{
+    color: yellow;
+}
+:nth-child(3) > span.terzo{
+    color: red;
+}

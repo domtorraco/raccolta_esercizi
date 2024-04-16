@@ -1,0 +1,42 @@
+*{
+    font-family: 'Lucida Sans';
+}
+
+h1{
+    font-size: xx-large;
+    margin-top: 5px;
+}
+
+.page-margin{
+    margin: 50px 200px 0px 200px;
+}
+
+.author {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.author > span {
+    font-size: larger;
+    margin-left: 10px;
+    font-weight: bold;
+    }
+
+.author a {
+    color: black;
+    text-decoration: none;
+}
+
+.date-link > span:nth-child(1) {
+    font-weight: bolder;
+    color: #3b3b4f;
+}
+
+.text-adv {
+    display: flex;
+}
+
+.text-adv > div {
+    margin-top: 16px;
+}
