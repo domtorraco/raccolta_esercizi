@@ -1,0 +1,98 @@
+/*GENERAL*/
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.video .title{
+    font-size: x-large;
+    font-weight: bolder;
+    color: white;
+}
+
+.video .author{
+    font-weight:lighter;
+    color: rgb(104, 101, 101);
+}
+
+/*HEADER*/
+
+header{
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_menu{
+    display: flex;
+
+}
+
+.nav_bar{
+    display: flex;
+
+}
+
+.profile{
+    display: flex;
+}
+
+/*MAIN*/
+
+main{
+    grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "auto auto auto auto";
+    padding: 5px;
+}
+
+main > .video{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.video_info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.video > img{
+    width: 15vh;
+}
+
+/*GRIGLIA VIDEO*/
+
+
+/*ASIDE*/
+
+aside{
+    grid-area: aside;
+    height: 100vh;
+}
+
+aside > div {
+    display: flex;
+    flex-direction: column;
+}
+
+aside > hr {
+   border: 1px solid;
+   color: gray; 
+}
+
+/*GRID SETTING*/
+
+body{
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "aside main";
+    background-color: black;
+    grid-template-columns: 20vh 80vh;
+    grid-template-rows: 5vh 90vh;
+    color: white;
+
+}

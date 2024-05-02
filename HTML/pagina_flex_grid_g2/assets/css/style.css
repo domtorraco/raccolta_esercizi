@@ -1,0 +1,86 @@
+.header{
+    grid-area: header;
+}
+.main{
+    margin: 20px auto;
+    grid-area: main;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+   
+}
+.footer{
+    grid-area: footer;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "header"
+                        "main"
+                        "footer";
+
+}
+.box{
+    background-color: rgb(254, 200, 99);
+    width: 30%;
+    height: 200px;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 5px 5px 6px rgb(0, 0, 0, 0.5);
+}
+
+.box > p{
+    padding: 5px 20px;
+    text-align: center;
+}
+.header-bottom{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(255, 148, 17);
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.header-top{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(232, 114, 30);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    height: 50px;
+    font-size: 1.2rem;
+}
+.no-margin{
+    margin: 0;
+
+}
+
+nav{
+    padding-right: 10%;
+}
+nav > a{
+    padding: 10px;
+}
+
+.tech-school{
+    padding-left: 10%;
+}
+
+h1{
+    font-size: 3rem;
+}
+h2{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

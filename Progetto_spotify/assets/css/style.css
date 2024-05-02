@@ -1,0 +1,229 @@
+
+body{
+    color: white;
+    background-color: black;
+}
+a{
+    text-decoration: none; 
+    color: white;
+ }
+button{
+    border-radius: 20px;
+    background-color: rgb(104, 102, 102);
+    color: white;
+    border: 0;
+    margin: 3px;
+}
+.title{
+    font-size: larger;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.author{
+    font-size: large;
+    font-weight: lighter;
+    font-family: 'Lucida Sans';
+}
+
+img{
+    border-radius: 20%;
+}
+
+/*Modifiche relative all' header*/
+header{
+    grid-area: header;
+    background-image:url(./MCR\ group.jpeg);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    width: 100%;
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.artistinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.button_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+}
+.menu{
+    display: flex;
+
+}
+/*Modifiche relative all' aside*/
+aside{
+    grid-area: aside;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    height: 100vh;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(64, 64, 64);
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: x-large;
+    padding: 10px;
+}
+.library{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(64, 64, 64);
+    border-radius: 10px;
+    padding: 10px;
+    height: 100%;
+}
+.library_menu{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.scrollbar{
+    display: flex;
+    flex-direction: column;
+    flex:0 1 auto;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.category{
+    display: flex;
+    background-color: rgb(64, 64, 64);
+    border-radius: 10px;
+    flex:0 1 auto;
+    overflow-x: auto;
+    margin-bottom: 10px;
+}
+.library_rows{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.library_rows > img {
+    width: 20%;
+    margin-right: 5px;
+}
+.library_rows > div{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/*Modifiche relative al Main */
+main{
+    grid-area: main;
+    background-color: rgb(64, 64, 64);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    flex:0 1 auto;
+    overflow-y: auto;
+    height: 70vh;
+}
+.artistinfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+.artistinfo > h1{
+    margin: 0;
+}
+.music_list .tracks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tracks{
+    transform: translateY(35%);
+}
+.tracks > img{
+    width: 15%;
+}
+
+li > img{
+    width: 15%;
+    height: auto;
+}
+
+h2{
+    text-decoration-style: solid;
+    padding: 0 10px;
+    margin: 10px;
+}
+li{
+    margin: 0;
+    padding: 10px;
+}
+/*Modifiche relative al Footer */
+footer{
+    grid-area: footer;
+    background-color: rgb(12, 12, 16);
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    
+}
+
+.track_playing > .name_track{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.track_playing{
+    display: flex;
+    padding-left: 10px;
+
+}
+
+.track_playing > img{
+    padding: 1vh;
+    width: 10vh;
+    border-radius: 20%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.utility{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 3%;
+    align-items: center;
+}
+.page{
+display: grid;
+grid-template-areas: 
+    "aside header"
+    "aside main"
+    "footer footer";
+grid-template-columns: 25% 75%;
+gap: 10px;
+}

@@ -1,0 +1,32 @@
+body{
+    background-color: rgb(25, 24, 24);
+    color: white;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0px;
+    background-color: rgb(25, 24, 24);
+    width: 100vh;
+    height: 5vh;
+    padding-top: 0;
+    margin-top: 0;
+}
+header img{
+    width: 100px;
+
+}
+
+li{
+    display: inline;     
+}
+li>a {
+    padding: 8px;
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}

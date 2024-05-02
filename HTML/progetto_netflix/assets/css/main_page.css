@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+
+main > div {
+    display: flex;
+    flex-direction: column;
+}
+.carousel{
+    display: flex;
+
+    /*Scrollbar*/
+    flex:0 1 auto;
+    overflow-x: auto;
+}
+
+.carousel > img{
+    width: 30%;
+    padding: 5px;
+}
